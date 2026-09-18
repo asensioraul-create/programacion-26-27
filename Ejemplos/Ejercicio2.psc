@@ -1,16 +1,41 @@
-Algoritmo Ejercicio2
+Algoritmo Ejercicio2_PRG
 	
-	Definir valora , valorb Como Entero;
+	Definir valora , valorb, resta ,suma , multiplicacion Como Entero;
+	Definir division Como Real;
+	
 	
 	Escribir "valor a" ;
 	Leer valora;
 	Escribir "valor b";
 	Leer valorb;
 	
-	Escribir  "La suma de Valor A + Valor B = " valora+valorb;
-	Escribir  "La resta de Valor A - Valor B = " valora-valorb;
-	Escribir "La division de Valor A / Valor B = " valora/valorb;
-	Escribir  "La multiplicacion de Valor A x Valor B = " valora*valorb;
+	suma <- valora+valorb;
+	resta <- valora-valorb;
+	multiplicacion <- valora*valorb;
+	
+	
+	Si (valorb = 0) Entonces
+		Escribir "No puedo divir por 0 , ¿te has perdido el episodio de los simpson?";
+	SiNo
+		division = valora/valorb;
+	Fin Si
+	
+		
+	Escribir 'La suma de ' , valora, ' + ' ,valorb, ' = ', suma;
+	
+	Escribir 'La resta de ' , valora, ' - ' ,valorb, ' = ', resta;
+	
+	
+	Escribir 'La multiplicacion de ' , valora, ' * ' ,valorb, ' = ', multiplicacion;
+	
+
+	
+	Si (valorb <> 0) Entonces
+		
+		Escribir 'La division de ' , valora, ' / ' ,valorb, ' = ', division;
+		
+	Fin Si
+	
 	
 	
 FinAlgoritmo
