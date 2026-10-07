@@ -1,18 +1,16 @@
 Algoritmo Ejercicio6
-	
-	Definir num1 Como Entero;
-	
-	num1 = 0;
-	
-	Escribir "Dime un numero mayor que 0";
-	Leer num1;
-	
-	Si (num1<= 0) Entonces
+		Definir num, cuadrado, raic Como Real;
 		
-		Escribir "Error";
-	SiNo
-		Escribir "El cuadrado de " num1 " es " num1*num1;
-		Escribir "La raiz cuadra de " num1 " es " RAIZ(num1);
-	Fin Si
-	
+		Escribir "Introduce un número:";
+		Leer num;
+		
+		Si num <= 0 Entonces
+			Escribir "Error: el número debe ser mayor que 0.";
+		SiNo
+			cuadrado <- num ^ 2;
+			raic <- RAIZ(num);
+			
+			Escribir "Del número ", num, ", su potencia es ", cuadrado, " y su raíz es ", raic;
+		FinSi
 FinAlgoritmo
+
